@@ -1155,8 +1155,9 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #555;
-			color: #f4f4f4 !important;
+			border: 1px solid black;
+			background-color: rgba(73, 200, 255, 0.5) ;
+			color: black !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -1284,7 +1285,7 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				object-fit: cover;
-				object-position: center;
+				object-position: top;
 				width: 100%;
 			}
 
@@ -1427,10 +1428,10 @@ input, select, textarea {
 					}
 
 				.panel.inactive > .image {
-					-moz-transform: translateX(1em);
-					-webkit-transform: translateX(1em);
-					-ms-transform: translateX(1em);
-					transform: translateX(1em);
+					-moz-transform: translateY(1em);
+					-webkit-transform: translateY(1em);
+					-ms-transform: translateY(1em);
+					transform: translateY(1em);
 				}
 
 				.panel.inactive > .content {
@@ -1450,8 +1451,9 @@ input, select, textarea {
 			}
 
 				.panel > .image {
-					min-height: 18em;
-					max-height: 30vh;
+					min-height: 30em;
+					max-height: 20vh;
+				
 				}
 
 				.panel > .content {
@@ -1472,10 +1474,13 @@ input, select, textarea {
 
 		}
 
+		
+
 		@media screen and (max-width: 360px) {
 
 			.panel > .image {
-				min-height: 15em;
+				min-height: 36em;
+				
 			}
 
 		}
